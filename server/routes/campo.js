@@ -3,7 +3,7 @@ import Campo from '../models/Campo.js'
 
 const router = express.Router()
 
-// Retorna um array com todos os campos do bd
+// Listando todos os campos do BD
 router.get('/', (req, res) => {
   Campo.find()
     .then(campos => {

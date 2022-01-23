@@ -3,7 +3,7 @@ import colorConsole from '../lib/color.js'
 import app from './app.js'
 
 mongoose
- .connect('mongodb://db:27017/crud-icolabora', {
+ .connect('mongodb://db:27017/crud-mongo', {
   useNewUrlParser: true
  })
  .then(result => {
