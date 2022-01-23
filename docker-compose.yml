@@ -2,7 +2,7 @@ version: '3'
 
 services:
   server:
-    container_name: NODEJS_SERVER_ICOLABORA
+    container_name: NODEJS_SERVER
     build: '.'
     volumes:
       - ./:/node-app
@@ -20,7 +20,7 @@ services:
 
   db:
     image: 'mongo'
-    container_name: MONGODB_ICOLABORA
+    container_name: MONGODB
     ports:
       - '5002:5002'
     volumes:
@@ -28,4 +28,4 @@ services:
 
 volumes:
   mongo:
-    name: icolabora_mongo
+    name: mongo_nodejs
